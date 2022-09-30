@@ -1,0 +1,43 @@
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
+
+h1 {
+    color:gray;
+    font-family:verdana;
+    height: 55px;
+}
+
+/* Styles the maindiv */
+.maindiv {
+background-color:white;
+color:black;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 480px;
+padding: 20px;
+border-radius: 25px;
+align-content: center;
+}
+
+/* Indents the paragraph further to better match the sample image provided */
+div p {
+padding-left: 50px;
+}
+
+/* Ensures that the input fiels are aligned and start at the same pixel */
+label {
+height: 30px;
+width: 120px;
+display: inline-block;
+}
+
+/* Highlights the selected elements (<span class="highlight"></span> marked in the javascript) in the result paragraph */
+.highlight {
+    background-color: yellow;
+}
+

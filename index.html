@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <title>Simple Interest Calculator</title>
+
+    <head>
+        <title>Simple Interest Calculator</title>
+        <!--Link CSS and Javascript files-->
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="name" content="Simple Interest Calculator">
+        <!-- remove the following line after you are happy with your Website
+        so that search engines will index it! -->
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <p>
+                <!--Input principal and use a Javascript function to ensure inputed value is positive-->
+                <label>Amount</label> <input type="number"  id="principal" oninput="checkprincipal_is_positive()" required>  
+                <br/>
+
+                <!--Select interest rate using a slider and use a Javascript function to show slider value that dynamically changes-->
+                <label>Interest Rate</label> <input type="range"  id="rate" min=1 max=20 step=0.25 value=10.25 onchange="updateRate()"> <span id="rate_val">10.25%</span> 
+                <br/>
+
+                <!--Select number of years using a dropdown list-->
+                <label>No. of Years</label> 
+                <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br/>
+            
+                <!--Use a Javascript function to compute the interest rate and to output the result-->
+                <button onclick="compute()">Compute Interest</button> 
+                <br/><br/>
+                    
+                <!--Show the result-->
+                <span id="result"> </span>
+            </p>
+            <br/>
+
+            <footer>
+
+                &#169; Everyone Can Get Rich <br/>
+                This Calculator belongs to Petar Antovski
+
+            </footer>
+        
+        </div>
+        
+    </body>
+</html>
