@@ -2,7 +2,9 @@
 
 In this project I developed a web application that calculates interest earned based on amount deposited and chosen interest rate and number of years.
 
-Using Javascript, the output paragraph, marked in yellow, appears only when all requested valuees are entered and chosen and are correct.
+Using Javascript, the output paragraph appears only when a correct Amount is entered and the 'Compute interest' button is pressed.
+
+If the amount entered is incorrect or not entered and the 'Compute interest' button is pressed then an alert message appeears notifying the user of the error.
 
 Through this project I practiced my further improved skills in HTML and CSS and my newly developed skills in JavaScript.
 
